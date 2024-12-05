@@ -109,24 +109,3 @@ This table maps users to ad accounts they have access to.
    WHERE m.metric_name = 'impressions'
    GROUP BY dh.name, dh.dimension_type;
    ```
-
-### Critique of the Two-Table Approach
-
-#### **Advantages**
-1. **Simplicity**:
-   - Consolidates hierarchical data into a single table, making storage straightforward.
-2. **Scalability**:
-   - Flexible to add new types of dimensions and metrics without schema changes.
-3. **Query Flexibility**:
-   - Works well for dynamic queries based on the selectors (dates, dimensions, metrics).
-
-#### **Limitations**
-1. **Complex Queries**:
-   - Hierarchical queries require recursive CTEs or application-level logic, which can become computationally expensive.
-   - Aggregations across multiple levels can lead to slower performance for large datasets.
-4. **User-to-Account Mapping**:
-   - Requires additional tables (e.g., `UserAccountMapping`) to handle multi-user access and permissions, which adds complexity to the backend logic.
-5. **Indexing**:
-   - Performance heavily depends on appropriate indexing of fields like `dimension_id`, `date`, and `metric_name`. Without careful design, queries on large datasets will be slow.
-
----
