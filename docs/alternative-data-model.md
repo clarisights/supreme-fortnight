@@ -58,19 +58,6 @@ This table maps users to ad accounts they have access to.
 
 ---
 
-### **Advantages of This Approach**
-1. **Reduced Complexity**:
-   - No need for separate tables for Accounts, Campaigns, AdSets, and Ads.
-   - Hierarchical relationships can be inferred using `parent_id`.
-
-2. **Scalability**:
-   - Adding new types of dimensions (e.g., "Creative") or metrics (e.g., "Engagement Rate") is easy.
-
-3. **Flexibility for Queries**:
-   - Dynamic SQL queries can aggregate metrics and group by dimensions flexibly.
-
----
-
 ### **Query Patterns**
 
 1. **Get Total Impressions by Campaign**
@@ -137,10 +124,6 @@ This table maps users to ad accounts they have access to.
 1. **Complex Queries**:
    - Hierarchical queries require recursive CTEs or application-level logic, which can become computationally expensive.
    - Aggregations across multiple levels can lead to slower performance for large datasets.
-2. **Denormalized Metrics**:
-   - Storing each metric as a separate row in the `Metrics` table (instead of columns) simplifies extensibility but can complicate querying and indexing.
-3. **Potential Overhead**:
-   - Storing metadata (e.g., attributes) in JSON fields can result in performance overhead for frequent lookups or aggregations.
 4. **User-to-Account Mapping**:
    - Requires additional tables (e.g., `UserAccountMapping`) to handle multi-user access and permissions, which adds complexity to the backend logic.
 5. **Indexing**:

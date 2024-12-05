@@ -5,7 +5,6 @@
 
 ## **Authors**  
 - Mihir Khandekar
-- GitHub Co-Pilot
 
 ## **Created**
 _[2024-12-02]_  
