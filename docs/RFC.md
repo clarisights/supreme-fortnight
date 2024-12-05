@@ -209,6 +209,8 @@ WHERE ad.campaign_name = {campaign_name}
 GROUP BY a.name;
 ```
 
+**Note**: Alternative Data model is defined [here](./alternative-data-model.md).
+
 ### **APIs**  
 
 `POST /login`
