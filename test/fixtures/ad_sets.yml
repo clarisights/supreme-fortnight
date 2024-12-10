@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  optimization_goal: MyString
+  start_date: 2024-12-10
+  end_date: 2024-12-10
+  daily_budget: 1
+  lifetime_budget: 1
+  billing_event: MyString
+  bid_strategy: MyString
+  campaign: one
+
+two:
+  name: MyString
+  optimization_goal: MyString
+  start_date: 2024-12-10
+  end_date: 2024-12-10
+  daily_budget: 1
+  lifetime_budget: 1
+  billing_event: MyString
+  bid_strategy: MyString
+  campaign: two

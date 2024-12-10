@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  landing_pages: MyString
+  ad_type: MyString
+  ad_format: MyString
+  start_date: 2024-12-10
+  facebook_post: MyString
+  instagram_post: MyString
+  ad_set: one
+
+two:
+  name: MyString
+  landing_pages: MyString
+  ad_type: MyString
+  ad_format: MyString
+  start_date: 2024-12-10
+  facebook_post: MyString
+  instagram_post: MyString
+  ad_set: two

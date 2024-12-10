@@ -1,0 +1,37 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ad: one
+  date: 2024-12-10
+  impressions: 1
+  all_clicks: 1
+  clicks: 1
+  spend: 1
+  all_ctr: 1.5
+  ctr: 1.5
+  cplc: 1.5
+  cpc: 1.5
+  comments: 1
+  likes: 1
+  landing_page_views: 1
+  mobile_app_installs: 1
+  video_plays: 1
+  conversions: 1
+
+two:
+  ad: two
+  date: 2024-12-10
+  impressions: 1
+  all_clicks: 1
+  clicks: 1
+  spend: 1
+  all_ctr: 1.5
+  ctr: 1.5
+  cplc: 1.5
+  cpc: 1.5
+  comments: 1
+  likes: 1
+  landing_page_views: 1
+  mobile_app_installs: 1
+  video_plays: 1
+  conversions: 1

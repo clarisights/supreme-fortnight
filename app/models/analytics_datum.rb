@@ -1,0 +1,2 @@
+class AnalyticsDatum < ApplicationRecord
+end

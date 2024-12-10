@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  campaign_name: MyString
+  adset_name: MyString
+  ad_name: MyString
+  revenue: 1
+  date: 2024-12-10
+
+two:
+  campaign_name: MyString
+  adset_name: MyString
+  ad_name: MyString
+  revenue: 1
+  date: 2024-12-10
