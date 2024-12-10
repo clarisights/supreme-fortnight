@@ -1,2 +1,3 @@
-# supreme-fortnight
-Welcome to Clarisights
+# README
+
+This is a test repository for Mihir's onboarding programming task.
