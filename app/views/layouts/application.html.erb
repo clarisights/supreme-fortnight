@@ -21,14 +21,37 @@
     <%= stylesheet_link_tag :app, "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
+  <body style="height: 100vh; width: 100vh;">
     <% if notice %>
       <p class="alert alert-info"><%= notice %></p>
     <% end %>
     <% if alert %>
       <p class="alert alert-warning"><%= alert %></p>
     <% end %>
-
-  <body>
-    <%= yield %>
+    <div style="display: flex;
+      flex-direction: row;
+      position: fixed;
+      align-items:center;
+      height: 5vh;
+      background: skyblue;
+      width: 100vw;
+      top: 0;
+      left: 0;
+      padding-left: 1%;
+      color: #CF2727;
+      /* margin-bottom: 5vh;" */
+    >
+      <h2>Supreme Fortnight</h2>
+    </div>
+    <div
+      style="
+        padding: 5vh 0 1% 0;
+        height: 95vh;
+        overflow-y: auto;
+        width: 100vw;
+      "
+    >
+      <%= yield %>
+    </div>
   </body>
 </html>
